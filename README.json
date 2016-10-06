@@ -1,0 +1,480 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "",
+    "title": "",
+    "license": {
+      "name": "MIT",
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+    }
+  },
+  "host": "api.stg.infra.uefa.com",
+  "basePath": "/StadiumAssetService/v1",
+  "securityDefinitions": {},
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/projections/StadiumVenueAnnouncement": {
+      "get": {
+        "operationId": "FindStadiumVenueAnnouncementProjection_",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "DefaultOrganizationId",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Skip",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Take",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "OrderByDesc",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "Include",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "Meta",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "schema": {
+              "$ref": "#/definitions/Dictionary<String,String>"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "Update_FindStadiumVenueAnnouncementProjection_",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "DefaultOrganizationId",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Skip",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Take",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "OrderBy",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "OrderByDesc",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "Include",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "Meta",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "schema": {
+              "$ref": "#/definitions/Dictionary<String,String>"
+            }
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "x-is-map": false,
+            "schema": {
+              "$ref": "#/definitions/FindStadiumVenueAnnouncementProjection"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "operationId": "Create_FindStadiumVenueAnnouncementProjection_",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "DefaultOrganizationId",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Skip",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Take",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "OrderBy",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "OrderByDesc",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "Include",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "Meta",
+            "in": "formData",
+            "required": false,
+            "x-is-map": false,
+            "schema": {
+              "$ref": "#/definitions/Dictionary<String,String>"
+            }
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "x-is-map": false,
+            "schema": {
+              "$ref": "#/definitions/FindStadiumVenueAnnouncementProjection"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "operationId": "Delete_FindStadiumVenueAnnouncementProjection_",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "DefaultOrganizationId",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Skip",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Take",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "OrderByDesc",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "Include",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "type": "string"
+          },
+          {
+            "name": "Meta",
+            "in": "query",
+            "required": false,
+            "x-is-map": false,
+            "schema": {
+              "$ref": "#/definitions/Dictionary<String,String>"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "FindStadiumVenueAnnouncementProjection": {
+      "title": "FindStadiumVenueAnnouncementProjection",
+      "description": "FindStadiumVenueAnnouncementProjection",
+      "type": "object",
+      "properties": {
+        "DefaultOrganizationId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "Skip": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "Take": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "OrderBy": {
+          "type": "string"
+        },
+        "OrderByDesc": {
+          "type": "string"
+        },
+        "Include": {
+          "type": "string"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Dictionary<String,String>"
+        }
+      },
+      "required": [
+        "DefaultOrganizationId",
+        "Skip",
+        "Take",
+        "OrderBy",
+        "OrderByDesc",
+        "Include",
+        "Meta"
+      ]
+    },
+    "Dictionary<String,String>": {
+      "title": "Dictionary<String,String>",
+      "description": "Dictionary<String,String>",
+      "type": "object"
+    },
+    "QueryResponse<StadiumVenueAnnouncementProjection>": {
+      "title": "QueryResponse<StadiumVenueAnnouncementProjection>",
+      "description": "QueryResponse<StadiumVenueAnnouncementProjection>",
+      "type": "object",
+      "properties": {
+        "Offset": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "Total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "Results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/StadiumVenueAnnouncementProjection"
+          }
+        },
+        "Meta": {
+          "$ref": "#/definitions/Dictionary<String,String>"
+        },
+        "ResponseStatus": {
+          "$ref": "#/definitions/ResponseStatus"
+        }
+      },
+      "required": [
+        "Offset",
+        "Total"
+      ]
+    },
+    "StadiumVenueAnnouncementProjection": {
+      "title": "StadiumVenueAnnouncementProjection",
+      "description": "StadiumVenueAnnouncementProjection",
+      "type": "object",
+      "properties": {
+        "Category": {
+          "type": "string"
+        },
+        "City": {
+          "type": "string"
+        },
+        "LastInspectionDate": {
+          "type": "string"
+        },
+        "OfficialName": {
+          "type": "string"
+        },
+        "SponsorName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Category",
+        "City",
+        "LastInspectionDate",
+        "OfficialName",
+        "SponsorName"
+      ]
+    },
+    "ResponseStatus": {
+      "title": "ResponseStatus",
+      "description": "ResponseStatus",
+      "type": "object",
+      "properties": {
+        "ErrorCode": {
+          "type": "string"
+        },
+        "Message": {
+          "type": "string"
+        },
+        "StackTrace": {
+          "type": "string"
+        },
+        "Errors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ResponseError"
+          }
+        },
+        "Meta": {
+          "$ref": "#/definitions/Dictionary<String,String>"
+        }
+      },
+      "required": [
+        "ErrorCode",
+        "Message",
+        "StackTrace",
+        "Errors",
+        "Meta"
+      ]
+    },
+    "ResponseError": {
+      "title": "ResponseError",
+      "description": "ResponseError",
+      "type": "object",
+      "properties": {
+        "ErrorCode": {
+          "type": "string"
+        },
+        "FieldName": {
+          "type": "string"
+        },
+        "Message": {
+          "type": "string"
+        },
+        "Meta": {
+          "$ref": "#/definitions/Dictionary<String,String>"
+        }
+      },
+      "required": [
+        "ErrorCode",
+        "FieldName",
+        "Message",
+        "Meta"
+      ]
+    }
+  }
+}
